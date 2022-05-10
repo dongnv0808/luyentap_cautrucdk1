@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    let diemKiemTra = parseInt(prompt('Điểm kiểm tra:'))
+    let diemThiGiuaKy = parseInt(prompt('Điểm thi giữa kỳ:'));
+    let diemThiCuoiKy = parseInt(prompt('Điểm thi cuối kỳ:'));
+    
+    let tongDiem = ((diemKiemTra + diemThiGiuaKy*2 + diemThiCuoiKy*3) / 6)
+
+    if (tongDiem >= 8){
+        document.write('Hoc sinh gioi');
+    } else if(tongDiem >= 6.5) {
+        document.write('Hoc sinh kha');
+    } else if(tongDiem >= 5) {
+        document.write('Hoc sinh trung binh');
+    } else if(tongDiem >= 3.5){
+        document.write('Hoc sinh yeu');
+    } else {
+        document.write('Hoc sinh kem');
+    }
+</script>
+</html>

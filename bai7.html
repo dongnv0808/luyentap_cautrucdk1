@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+</style>
+<body>
+    <h1>Tinh cuoc dien thoai cho ho gia dinh</h1>
+    <table>
+        <tr>
+            <td><p>Goi noi mang</p></td>
+            <td><input type="number" id="goiNoiMang">phut</td>
+        </tr>
+        <tr>
+            <td><p>Goi ngoai mang</p></td>
+            <td><input type="number" id="goiNgoaiMang">phut</td>
+        </tr>
+        <tr>
+            <td><p></p>Tin nhan noi mang</p></td>
+            <td><input type="number" id="smsNoiMang">tin</td>
+        </tr>
+        <tr>
+            <td><p>Tin nhan ngoai mang</p></td>
+            <td><input type="number" id="smsNgoaiMang">tin</td>
+        </tr>
+        <tr>
+            <td><p>Tin nhan quoc te</p></td>
+            <td><input type="number" id="smsQuocTe">tin</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" onclick="tinhToan()" value="Tinh toan"></td>
+        </tr>
+        <tr>
+            <td>Bang gia</td>
+            <td>
+                Gọi nội mạng: 890đ/phút <br>
+                Gọi ngoại mạng: 1.090đ/phút <br> <br>
+                
+                SMS nội mạng trong nước: 300đ/tin <br>
+                SMS ngoại mạng trong nước: 350đ/tin <br>
+                SMS quốc tế: 2.500đ/tin
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Cuoc goi noi mang:<p id="result1"></p></td>
+        </tr>
+        <tr>
+            <td colspan="2">Cuoc goi ngoai mang:<p id="result2"></p></td>
+        </tr>
+        <tr>
+            <td colspan="2">Tin nhan noi mang:<p id="result3"></p></td>
+        </tr>
+        <tr>
+            <td colspan="2">Tin nhan ngoai mang:<p id="result4"></p></td>
+        </tr>
+        <tr>
+            <td colspan="2">Tin nhan quoc te:<p id="result5"></p></td>
+        </tr>
+        <tr>
+            <td colspan="2">Tong tien:<p id="tongTien"></p></td>
+        </tr>
+    </table>
+</body>
+<script src="./bai7.js">
+</script>
+</html>

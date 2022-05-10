@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="doanhSo">trieu <br>
+    <input type="button" onclick="tinhHoaHong()" value="Check">
+    <div id="result"></div>
+</body>
+<script>
+    function tinhHoaHong(){
+        let doanhSo = document.getElementById('doanhSo').value;
+        let ketQua = 0;
+
+        if(doanhSo <= 100){
+            ketQua = doanhSo * 5 / 100; 
+            document.getElementById('result').innerHTML = `Hoa hong nhan duoc la ${ketQua}trieu`;
+        } else if(doanhSo <= 200){
+            ketQua = doanhSo * 10 / 100; 
+            document.getElementById('result').innerHTML = `Hoa hong nhan duoc la ${ketQua}trieu`;
+        } else {
+            ketQua = doanhSo * 20 / 100; 
+            document.getElementById('result').innerHTML = `Hoa hong nhan duoc la ${ketQua}trieu`;
+        }
+    }
+</script>
+</html>
